@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit {
     } else {
       this.authService.register(this.user).subscribe((resp: User) => {
         this.user = resp
-        this.router.navigate(['/login'])
+        this.router.navigate(['/enter'])
         alert('User registered')
       })
     }
